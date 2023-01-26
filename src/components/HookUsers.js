@@ -11,7 +11,8 @@ function HookUsers() {
   //       .then((data) => setUsers(data));
   //   }, []);
   useEffect(() => {
-    axios.get(url)
+    axios
+      .get(url)
       .then((response) => {
         setUsers(response.data);
       })
@@ -24,23 +25,23 @@ function HookUsers() {
     <div>
       <h2>useEffect data</h2>
       <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                </tr>
-            </thead>
-            <tbody>
-                {users.map((item) => (
-                    <tr key={item.id}>
-                        <td>{item.id}</td>
-                        <td>{item.name}</td>
-                        <td>{item.email}</td>
-                    </tr>
-                ))}
-            </tbody>
-        </table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users && users.map((item) => (
+            <tr key={item.id}>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
+              <td>{item.email}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
       {/* {users && users.map((user) => <li key={user.id}>{user.name}</li>)} */}
     </div>
   );
