@@ -8,6 +8,7 @@ import MouseContainer from './components/MouseContainer';
 import HookAxiosExample from './components/HookAxiosExample';
 import EmployeeData from './components/EmployeeData';
 import EmployeeSaveData from './components/EmployeeSaveData';
+import IntervalClassCounter from './components/IntervalClassCounter';
 function App() {
   return (
     <div className="App">
@@ -18,13 +19,14 @@ function App() {
       {/* <HookCounterFour/> */}
       {/* <ClassCounterone/> */}
       {/* <HookCounterOne/> */}
-      <HookUsers/>
+      {/* <HookUsers/> */}
       {/* <ClassMouse/> */}
       {/* <HookMouse/> */}
       {/* <MouseContainer/> */}
       {/* <HookAxiosExample/> */}
       {/* <EmployeeData/> */}
       {/* <EmployeeSaveData/> */}
+      <IntervalClassCounter/>
     </div>
   );
 }
