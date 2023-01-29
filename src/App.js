@@ -9,6 +9,7 @@ import HookAxiosExample from './components/HookAxiosExample';
 import EmployeeData from './components/EmployeeData';
 import EmployeeSaveData from './components/EmployeeSaveData';
 import IntervalClassCounter from './components/IntervalClassCounter';
+import IntervalHookCounter from './components/IntervalHookCounter';
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
       {/* <EmployeeData/> */}
       {/* <EmployeeSaveData/> */}
       <IntervalClassCounter/>
+      <IntervalHookCounter/>
     </div>
   );
 }
