@@ -20,6 +20,9 @@ import CounterTwo from "./components/CounterTwo";
 import CounterThree from "./components/CounterThree";
 import ComponentA from "./components/ComponentA";
 import ComponentAD from "./components/ComponentAD";
+import DataFetchingOne from "./components/DataFetchingOne";
+import DataFetchingTwo from "./components/DataFetchingTwo";
+import ParentComponent from "./components/ParentComponent";
 
 export const UserContext = React.createContext();
 
@@ -45,11 +48,11 @@ export const CounterContext = React.createContext();
 function App() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
-    <CounterContext.Provider
-      value={{ counterVal: count, counterDispath: dispatch }}
-    >
+    // <CounterContext.Provider
+    //   value={{ counterVal: count, counterDispath: dispatch }}
+    // >
       <div className="App">
-        {count}
+        {/* {count} */}
         {/* <ClassCounter/> */}
         {/* <HookCounter/> */}
         {/* <HookCounterTwo/> */}
@@ -76,10 +79,13 @@ function App() {
         {/* <CounterOne/> */}
         {/* <CounterTwo/> */}
         {/* <CounterThree/> */}
-        <ComponentA />
-        <ComponentAD />
+        {/* <ComponentA />
+        <ComponentAD /> */}
+        {/* <DataFetchingOne/> */}
+        {/* <DataFetchingTwo/> */}
+        <ParentComponent/>
       </div>
-    </CounterContext.Provider>
+    // </CounterContext.Provider>
   );
 }
 

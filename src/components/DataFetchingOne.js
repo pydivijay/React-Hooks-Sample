@@ -8,16 +8,16 @@ function DataFetchingOne() {
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/posts/1")
+      .get("https://jsonplaceholder.typicode1.com/posts/1")
       .then((response) => {
         setLoading(false);
-        setPost(response);
+        setPost(response.data);
         setError("");
       })
-      .error((error) => {
+      .catch((error) => {
         setLoading(false);
         setPost({});
-        setError(error);
+        setError(error.message);
       });
   }, []);
   return (
