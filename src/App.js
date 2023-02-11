@@ -24,6 +24,9 @@ import DataFetchingOne from "./components/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetchingTwo";
 import ParentComponent from "./components/ParentComponent";
 import Count from "./components/Count";
+import FocusInput from "./components/FocusInput";
+import ClassTimer from "./components/ClassTimer";
+import HookTimer from "./components/HookTimer";
 
 export const UserContext = React.createContext();
 
@@ -85,7 +88,10 @@ function App() {
         {/* <DataFetchingOne/> */}
         {/* <DataFetchingTwo/> */}
         {/* <ParentComponent/> */}
-        <Count/>
+        {/* <Count/> */}
+        {/* <FocusInput/> */}
+        <ClassTimer/>
+        <HookTimer/>
       </div>
     // </CounterContext.Provider>
   );
