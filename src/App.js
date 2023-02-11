@@ -23,6 +23,7 @@ import ComponentAD from "./components/ComponentAD";
 import DataFetchingOne from "./components/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetchingTwo";
 import ParentComponent from "./components/ParentComponent";
+import Count from "./components/Count";
 
 export const UserContext = React.createContext();
 
@@ -83,7 +84,8 @@ function App() {
         <ComponentAD /> */}
         {/* <DataFetchingOne/> */}
         {/* <DataFetchingTwo/> */}
-        <ParentComponent/>
+        {/* <ParentComponent/> */}
+        <Count/>
       </div>
     // </CounterContext.Provider>
   );
